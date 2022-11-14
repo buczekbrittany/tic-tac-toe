@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <script src="index.js" charset="UTF-8" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <div id="welcomeMsg" style="visibility: visible">Welcome! Let's Play Tic Tac Toe...</div>
+        <div id="userDisplayMsg" style="visibility: hidden">It is <span id="playerDisplay"></span>'s turn</div>
+        <div class="board">
+            <div class="section" id="0" onclick='sectionClick(event,this.id)'></div>
+            <div class="section" id="1" onclick='sectionClick(event,this.id)'></div>
+            <div class="section" id="2" onclick='sectionClick(event,this.id)'></div>
+            <div class="section" id="3" onclick='sectionClick(event,this.id)'></div>
+            <div class="section" id="4" onclick='sectionClick(event,this.id)'></div>
+            <div class="section" id="5" onclick='sectionClick(event,this.id)'></div>
+            <div class="section" id="6" onclick='sectionClick(event,this.id)'></div>
+            <div class="section" id="7" onclick='sectionClick(event,this.id)'></div>
+            <div class="section" id="8" onclick='sectionClick(event,this.id)'></div>
+        </div>
+            <h3>Computer</h3>
+            <h3 id="playerName">Player 1</h3>
+            <input id="input" placeholder="type name here">
+            <button id="submit">Submit</button>
+            <div id="winner">
+                <button id="resetButton" onclick=resetButton()>Play Again?</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
